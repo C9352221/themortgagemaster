@@ -682,13 +682,34 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 @media (max-width: 720px) {
-  .nav { padding: 0.85rem 1rem; gap: 0.85rem; }
+  .nav { padding: 0.6rem 1rem; gap: 0.85rem; }
   .nav-links { gap: 0.85rem; }
   .nav-links a:not(.nav-cta) { display: none; }
   .nav-cta { padding: 0.55rem 0.95rem; font-size: 0.76rem !important; }
-  .brand-photo { width: 48px; height: 48px; }
-  .brand-name { font-size: 1.2rem; }
-  .brand-sub { font-size: 0.66rem; letter-spacing: 0.13em; }
+  .brand-photo { width: 44px; height: 44px; }
+  .brand-name { font-size: 1.1rem; }
+  .brand-sub { font-size: 0.62rem; letter-spacing: 0.12em; }
   .section { padding: 4rem 0; }
   .core-grid .text-block { text-align: center; }
+
+  /* Mobile hero — get the video above the fold */
+  .hero { padding: 0.75rem 0 0.5rem; }
+  .hero-grid { gap: 0.85rem; }
+  .hero-eyebrow { display: none; }      /* NMLS info shown again in footer */
+  .hero-lede { display: none; }          /* long-form copy hidden on phones */
+  .hero-image { display: none; }         /* mascot is decorative; saves ~220px */
+  .hero-title { font-size: 2.3rem; margin-bottom: 0.4rem; }
+  .hero-tagline { font-size: 1rem; margin-bottom: 0.85rem; }
+  .hero-email { margin-bottom: 0.85rem; font-size: 0.9rem; }
+  .hero-actions { margin-bottom: 0.85rem; gap: 0.6rem; }
+  .hero-actions .btn-primary,
+  .hero-actions .btn-secondary {
+    padding: 0.7rem 1.05rem;
+    font-size: 0.78rem;
+    flex: 1 1 0;
+    min-width: 0;
+    text-align: center;
+  }
+  .hero-meta { font-size: 0.68rem; gap: 0.45rem; letter-spacing: 0.06em; }
+  .feature-band { height: 240px; }
 }
