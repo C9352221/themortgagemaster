@@ -148,7 +148,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ============ HERO ============ */
 .hero {
-  padding: 6rem 0 5.5rem;
+  padding: 2.5rem 0 2.5rem;
   background: var(--bg);
   border-bottom: 1px solid var(--line);
 }
@@ -388,6 +388,17 @@ img { max-width: 100%; height: auto; display: block; }
   object-position: center center;
   display: block;
   filter: saturate(0.92) contrast(1.02);
+}
+.feature-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+.video-band::after {
+  /* hide the dark overlay for the video so motion is uninterrupted */
+  display: none;
 }
 .feature-band::after {
   content: '';
@@ -654,7 +665,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ============ RESPONSIVE ============ */
 @media (max-width: 860px) {
-  .hero { padding: 4rem 0 3.5rem; }
+  .hero { padding: 2rem 0 2rem; }
   .hero-grid { grid-template-columns: 1fr; gap: 1.75rem; }
   .hero-image { order: -1; }
   .hero-image img { max-width: 180px; }
