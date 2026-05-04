@@ -566,15 +566,19 @@ img { max-width: 100%; height: auto; display: block; }
 .contact-email {
   text-align: center;
   margin: 0 0 1.75rem;
-  word-break: break-word;
   padding: 0 0.5rem;
+  word-break: keep-all;
+  overflow-wrap: normal;
 }
 .contact-email a {
-  font-size: clamp(0.95rem, 2.4vw, 1.25rem);
+  font-size: clamp(0.78rem, 3.4vw, 1.25rem);
   font-weight: 500;
   color: #1d4ed8;
   border-bottom: 1px solid transparent;
   transition: border-color 0.15s ease;
+  white-space: nowrap;
+  display: inline-block;
+  max-width: 100%;
 }
 .contact-email a:hover { border-bottom-color: #1d4ed8; }
 .contact-or {
