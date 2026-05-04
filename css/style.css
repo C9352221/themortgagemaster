@@ -155,17 +155,11 @@ img { max-width: 100%; height: auto; display: block; }
 .hero-inner { max-width: 880px; }
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 3rem;
+  grid-template-columns: 1fr;
+  gap: 0;
   align-items: center;
 }
-.hero-image {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.75rem;
-}
+.hero-image { display: none; }
 .hero-image img {
   max-width: 300px;
   width: 100%;
