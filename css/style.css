@@ -173,18 +173,17 @@ img { max-width: 100%; height: auto; display: block; }
   border-radius: 6px;
 }
 .hero-image-label {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  letter-spacing: 0.005em;
   color: var(--text);
   text-align: center;
 }
 .hero-image-caption {
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 0.005em;
   color: var(--highlight);
   text-align: center;
 }
@@ -217,25 +216,34 @@ img { max-width: 100%; height: auto; display: block; }
   font-family: var(--sans);
 }
 .hero-tagline {
-  font-size: clamp(0.95rem, 1.3vw, 1.1rem);
+  font-size: clamp(0.92rem, 1.2vw, 1.05rem);
   font-weight: 600;
   font-style: normal;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.005em;
   color: var(--text-muted);
-  margin-bottom: 1.75rem;
+  margin-bottom: 0.25rem;
   font-family: var(--sans);
+  white-space: nowrap;
 }
 .hero-tagline .dot-gold {
   color: #d4a019;
-  margin: 0 0.45em;
+  margin: 0 0.3em;
   font-weight: 900;
   font-size: 1.4em;
   vertical-align: -2px;
   display: inline-block;
 }
+.hero-experience {
+  font-size: clamp(0.92rem, 1.2vw, 1.05rem);
+  font-weight: 600;
+  letter-spacing: 0.005em;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  font-family: var(--sans);
+}
 .hero-bullets {
-  list-style: none;
-  padding: 0;
+  list-style: disc;
+  padding-left: 1.4rem;
   margin: 0 0 2rem;
   max-width: 640px;
 }
@@ -243,18 +251,12 @@ img { max-width: 100%; height: auto; display: block; }
   font-size: clamp(1rem, 1.4vw, 1.12rem);
   color: var(--text);
   font-weight: 500;
-  line-height: 1.4;
-  padding: 6px 0 6px 28px;
-  position: relative;
+  line-height: 1.45;
+  padding: 4px 0;
 }
-.hero-bullets li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 14px;
-  width: 14px;
-  height: 2px;
-  background: var(--highlight);
+.hero-bullets li::marker {
+  color: var(--highlight);
+  font-size: 1.15em;
 }
 .hero-lede {
   font-size: clamp(1.05rem, 1.6vw, 1.2rem);
@@ -274,13 +276,14 @@ img { max-width: 100%; height: auto; display: block; }
 .hero-meta {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  font-size: 0.82rem;
+  gap: 0.55rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--highlight);
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 .hero-meta .dot { color: #000; font-weight: 700; }
 
@@ -464,10 +467,10 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--text);
 }
 .mobile-mascot-caption {
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  font-size: 1.15rem;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 0.005em;
   color: var(--highlight);
 }
 .feature-band::after {
@@ -518,13 +521,18 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .promise-text {
   font-size: clamp(1.5rem, 3vw, 2.1rem);
-  font-weight: 600;
-  font-style: italic;
+  font-weight: 700;
+  font-style: normal;
   letter-spacing: -0.015em;
   color: var(--text);
   line-height: 1.3;
   max-width: 30ch;
   margin: 0 auto;
+}
+.quoted-value {
+  font-weight: 700;
+  font-style: normal;
+  color: var(--text);
 }
 .promise-image {
   border-top: 1px solid var(--line);
