@@ -208,20 +208,50 @@ img { max-width: 100%; height: auto; display: block; }
   margin-bottom: 1.75rem;
 }
 .hero-title {
-  font-size: clamp(2.65rem, 6.2vw, 4.5rem);
-  font-weight: 600;
+  font-size: clamp(2.2rem, 4.8vw, 3.4rem);
+  font-weight: 700;
   line-height: 1.05;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.015em;
   color: var(--text);
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.4rem;
+  font-family: var(--sans);
 }
 .hero-tagline {
-  font-size: clamp(1rem, 1.4vw, 1.15rem);
+  font-size: clamp(0.95rem, 1.3vw, 1.1rem);
   font-weight: 600;
-  font-style: italic;
+  font-style: normal;
   letter-spacing: 0.02em;
+  color: var(--text-muted);
+  margin-bottom: 1.75rem;
+  font-family: var(--sans);
+}
+.hero-tagline .dot-gold {
+  color: var(--highlight);
+  margin: 0 0.4em;
+  font-weight: 700;
+}
+.hero-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  max-width: 640px;
+}
+.hero-bullets li {
+  font-size: clamp(1rem, 1.4vw, 1.12rem);
   color: var(--text);
-  margin-bottom: 2rem;
+  font-weight: 500;
+  line-height: 1.4;
+  padding: 6px 0 6px 28px;
+  position: relative;
+}
+.hero-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 14px;
+  height: 2px;
+  background: var(--highlight);
 }
 .hero-lede {
   font-size: clamp(1.05rem, 1.6vw, 1.2rem);
@@ -243,13 +273,13 @@ img { max-width: 100%; height: auto; display: block; }
   align-items: center;
   gap: 1rem;
   font-size: 0.82rem;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--text-soft);
+  color: var(--highlight);
   flex-wrap: wrap;
 }
-.hero-meta .dot { color: var(--highlight); }
+.hero-meta .dot { color: #000; font-weight: 700; }
 
 /* ============ SECTION ============ */
 .section { padding: 6rem 0; border-bottom: 1px solid var(--line); }
@@ -263,6 +293,11 @@ img { max-width: 100%; height: auto; display: block; }
   margin-bottom: 1rem;
 }
 .section-eyebrow.center { text-align: center; }
+.section-eyebrow.contact-eyebrow-big {
+  font-size: 1.1rem;
+  letter-spacing: 0.22em;
+  margin-bottom: 1.5rem;
+}
 .section-title {
   font-size: clamp(1.875rem, 3.8vw, 2.65rem);
   font-weight: 600;
@@ -291,16 +326,16 @@ img { max-width: 100%; height: auto; display: block; }
 /* ============ ABOUT ============ */
 .about-grid {
   display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 3.5rem;
-  align-items: center;
+  grid-template-columns: 220px 1fr;
+  gap: 3rem;
+  align-items: flex-start;
 }
 .about-image {
   position: relative;
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 25px 60px -30px rgba(19, 27, 43, 0.35);
-  max-width: 280px;
+  max-width: 220px;
 }
 .about-image img {
   width: 100%;
@@ -412,17 +447,16 @@ img { max-width: 100%; height: auto; display: block; }
   border-bottom: 1px solid var(--line);
 }
 .mobile-mascot img {
-  max-width: 160px;
+  max-width: 220px;
   width: 100%;
   height: auto;
   filter: drop-shadow(0 10px 20px rgba(19, 27, 43, 0.18));
   border-radius: 6px;
 }
 .mobile-mascot-label {
-  font-size: 0.85rem;
+  font-size: 1.15rem;
   font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  letter-spacing: 0.005em;
   color: var(--text);
 }
 .mobile-mascot-caption {
