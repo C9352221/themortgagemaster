@@ -226,9 +226,12 @@ img { max-width: 100%; height: auto; display: block; }
   font-family: var(--sans);
 }
 .hero-tagline .dot-gold {
-  color: var(--highlight);
-  margin: 0 0.4em;
-  font-weight: 700;
+  color: #d4a019;
+  margin: 0 0.45em;
+  font-weight: 900;
+  font-size: 1.4em;
+  vertical-align: -2px;
+  display: inline-block;
 }
 .hero-bullets {
   list-style: none;
